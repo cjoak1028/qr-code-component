@@ -1,0 +1,33 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --gray-light: hsl(212, 45%, 89%);
+    --blue-grayish: hsl(220, 15%, 55%);
+    --blue-dark: hsl(218, 44%, 22%);
+
+}
+
+*::before,
+*::after,
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
