@@ -3,24 +3,70 @@
     --gray-light: hsl(212, 45%, 89%);
     --blue-grayish: hsl(220, 15%, 55%);
     --blue-dark: hsl(218, 44%, 22%);
-
 }
 
 *::before,
 *::after,
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    background-color: var(--gray-light);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 html {
     font-size: 62.5%;
     font-family: 'Outfit', sans-serif;
+}
+
+.qr-code {
+    width: 32rem;
+    height: 49.7rem;
+    padding: 1.6rem;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.qr-code__container {
+    border-radius: 10px;
+    width: 28.8rem;
+    height: 28.8rem;
+    overflow: hidden;
+}
+
+.qr-code__container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.qr-code__description {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0 1.3rem;
+}
+
+.qr-code__description h1 {
+    color: var(--blue-dark);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+
+.qr-code__description p {
+    color: var(--blue-grayish);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    margin-top: 2.1rem;
 }
 
 .attribution {
